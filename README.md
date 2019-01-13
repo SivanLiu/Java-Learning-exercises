@@ -9,3 +9,9 @@
 * Volatile + Double+Check
 * Holder 方式
 * 枚举 + Holder 方式
+
+## 线程相关操作
+* 线程间同步
+* 线程构造器
+
+
