@@ -114,7 +114,8 @@ public class CopyConstructor {
         Tomato tomato = new Tomato();
         ripen(tomato);
         slice(tomato);
-        GreenZebra g = new GreenZebra();
+        GreenZebra greenZebra = new GreenZebra();
+        GreenZebra g = new GreenZebra(greenZebra);
         ripen(g);
         slice(g);
         g.evaluate();
