@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图片</title>
+</head>
+<body>
+
+<img id="picture" src="image1.jpg">
+<script>
+    var image = document.getElementById("picture");
+    var number = 1;
+
+    function func() {
+        number++;
+        if (number > 3) {
+            number = 1;
+        }
+
+        image.src = "image" + number + ".jpg";
+    }
+
+    setInterval(func, 3000);
+
+
+</script>
+</body>
+</html>

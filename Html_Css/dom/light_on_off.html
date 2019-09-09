@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灯泡开关</title>
+</head>
+<body>
+<img id="light" src="light_off.png">
+
+<script>
+    let flag = false;
+    const light = document.getElementById("light");
+
+    light.onclick = function () {
+        if (flag) {
+            light.src = "light_off.png";
+            flag = false;
+        } else {
+            light.src = "light_on.png";
+            flag = true;
+        }
+    }
+</script>
+</body>
+</html>

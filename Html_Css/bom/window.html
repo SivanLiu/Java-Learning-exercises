@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>窗口打开、关闭</title>
+</head>
+<body>
+<input id="open_window" type="button" value="open_window"> <input id="close_window" type="button" value="close_window">
+<script>
+    var window_id;
+    var open_window = document.getElementById("open_window");
+    var close_window = document.getElementById("close_window");
+    open_window.onclick = function () {
+        window_id = open("https://www.baidu.com")
+    }
+    close_window.onclick = function () {
+        window_id.close()
+    }
+</script>
+</body>
+</html>
